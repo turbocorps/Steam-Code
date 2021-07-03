@@ -13,7 +13,7 @@ var GenerateQueue = function( queueNumber )
    
         jQuery.when.apply( jQuery, requests ).done( function()
         {
-            if( queueNumber < 1 )
+            if( queueNumber < 3 )
             {
                 GenerateQueue( queueNumber );
             }
